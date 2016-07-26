@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Small Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/amios.css" rel="stylesheet" >
+
+    <!-- Custom CSS -->
+<!--     <link href="css/small-business.css" rel="stylesheet"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="bg-white">
+<div class="transitions">
+    <div class="statusline"></div>
+    <div class="loadtext">0%</div>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-mobile" href="#">
+                    <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                	<li style="width:16.666%" class="text-right brand-desk">
+                		<a class="navbar-brand" href="#"  style="color:rgba(76,191,255,1);width:100%">
+		                   <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+		                </a>
+                	</li>
+                    <li>
+                        <a href="location.html" class="active">DEVICE</a>
+                    </li>
+                  <!--   <li>
+                        <a href="scene.html">SCENE MODE</a>
+                    </li>
+                    <li>
+                        <a href="rule.html" class="active">RULE ENGINE</a>
+                    </li>
+                    <li>
+                        <a href="monitor.html">MONITOR</a>
+                    </li> -->
+                    <li>
+                        <a href="account.html">ACCOUNT</a>
+                    </li>
+                    <li>
+                        <a href="system.html">SYSTEM</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div class="container main-body">
+
+        <div class="row" style="position: relative">
+            <div class="subtitle-block">
+            	<ul class="subtitle">
+                    <li><h6><a href="location.html">DEVICE</a></h6></li>
+                    <li><h6><a href="scene.html">SCENE MODE</a></h6></li>
+                    <li class="main"><h6>RULE ENGINE</h6></li>
+	                <li class="active hook"><span>Rule list</span></li>
+	                <li class="hook"><span>Add new rule</span></li>
+                    <li><h6><a href="monitor.html">MONITOR</a></h6></li>
+            	</ul>
+            </div>
+            <div class="col-md-2"></div>
+            <!-- /main -->
+            <div class="col-md-10 main-block">
+
+                <div id="rule_list" class="sub-block  sub-block-slide">
+                    <div class="page" id="RuleList">
+                        <h2>Rule list</h2>
+                        <table class="table">
+    <!--                         <thead> <tr> <th>#</th> <th>Scene mode Name</th> <th></th> <th></th> </tr> </thead> -->
+                            <tbody>
+                                <tr> 
+                                    <th scope="row"  width="100px">
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                            </label>
+                                        </div>
+                                    </th> 
+                                    <td>Light On</td> <td></td> <td class="text-right"><div class="-btn def edit">EDIT</div><div class="-btn def">DELETE</div></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row">
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2">
+                                            <label class="onoffswitch-label" for="myonoffswitch2">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                            </label>
+                                        </div>
+                                    </th> 
+                                    <td>Light On 2</td> <td></td> <td class="text-right"><div class="-btn def edit">EDIT</div><div class="-btn def">DELETE</div></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row">
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3">
+                                            <label class="onoffswitch-label" for="myonoffswitch3">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                            </label>
+                                        </div>
+                                    </th> 
+                                    <td>Light On 3</td> <td></td> <td class="text-right"><div class="-btn def edit">EDIT</div><div class="-btn def">DELETE</div></td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="page scroll" id="RuleEdit">
+                        
+                        <h2>
+                            <div class="_deviceIcon back"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> 
+                            <input type="text" placeholder="" value="Light On">
+                        </h2>
+                          <h4>Condition</h4>
+                           <div class="oneSide-block left">
+                            <P>Temperature 1 :<input type="text" placeholder="0-20"><span class="font-btn def">X</span></P>
+                           </div>
+
+                           <div class="oneSide-block left chartTitle ">
+                            <h4>Condition Device</h4>
+                            <P><input type="text" placeholder="&#xF002; Search device" style="font-family:Arial, FontAwesome"></P>
+                            <ul>
+                                <li>
+                                    <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                    Temperature 1
+                                </li>
+                                <li>
+                                    <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                    Temperature 2
+                                </li>
+                            </ul>
+                           </div>
+                           <h4>Time</h4>
+                           <div class="oneSide-block left" style="width:55%">
+                            <p>When
+                                <SELECT>
+                                    <option disabled selected>Start time</option>
+                                    <option>00:00</option>
+                                    <option>01:00</option>
+                                    <option>02:00</option>
+                                </SELECT>
+                                to
+                                <SELECT>
+                                    <option disabled selected>End time</option>
+                                    <option>00:00</option>
+                                    <option>01:00</option>
+                                    <option>02:00</option>
+                                </SELECT>
+                            </p>
+                            <p>After <input type="text" placeholder="0~1440" > minutes</p>
+                            <p>Every
+                                <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="1"> SUN</label>
+                                <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="2"> MON</label>
+                                <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="3"> TUE</label>
+                                <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="4"> WED</label>
+                                <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="5"> THU</label>
+                                <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="6"> FRI</label>
+                                <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="7"> SAT</label>
+                            </p>
+                           </div>
+                           <h4 class="clear-both">Action</h4>
+                           <div class="oneSide-block left clear-both" >
+                            <P>Ligth 1 :
+                                <select>
+                                    <option>on</option>
+                                    <option>off</option>
+                                </select>
+                                <span class="font-btn def">X</span>
+                            </P>
+                           </div>
+                           <div class="oneSide-block left chartTitle">
+
+                            <h4>Action Device</h4>
+                            <P><input type="text" placeholder="&#xF002; Search device" style="font-family:Arial, FontAwesome"></P>
+                            <ul>
+                                <li>
+                                    <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                    Light 1
+                                </li>
+                                <li>
+                                    <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                    Light 2
+                                </li>
+                            </ul>
+                           </div>
+
+                            <div class="-btn def float-left clear-both mr-b-50px">SUBMIT</div><div class="-btn def float-left mr-b-50px back">BACK</div>
+                    </div>
+
+                </div>
+
+                <div  id="add_new_rule" class="sub-block scroll">
+                   <h2>Add new rule</h2>
+                   <h4 class="mr-b-50px">
+                       Rule name :<input type="text" placeholder=""> 
+                   </h4>
+                   <h4>Condition</h4>
+                   <div class="oneSide-block left">
+                    <P>Temperature 1 :<input type="text" placeholder="0-20"><span class="font-btn def">X</span></P>
+                   </div>
+
+                   <div class="oneSide-block left chartTitle ">
+                    <h4>Condition Device</h4>
+                    <P><input type="text" placeholder="&#xF002; Search device" style="font-family:Arial, FontAwesome"></P>
+                    <ul>
+                        <li>
+                            <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            Temperature 1
+                        </li>
+                        <li>
+                            <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            Temperature 2
+                        </li>
+                    </ul>
+                   </div>
+                   <h4>Time</h4>
+                   <div class="oneSide-block left" style="width:55%">
+                    <p>When
+                        <SELECT>
+                            <option disabled selected>Start time</option>
+                            <option>00:00</option>
+                            <option>01:00</option>
+                            <option>02:00</option>
+                        </SELECT>
+                        to
+                        <SELECT>
+                            <option disabled selected>End time</option>
+                            <option>00:00</option>
+                            <option>01:00</option>
+                            <option>02:00</option>
+                        </SELECT>
+                    </p>
+                    <p>After <input type="text" placeholder="0~1440" > minutes</p>
+                    <p>Every
+                        <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="1"> SUN</label>
+                        <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="2"> MON</label>
+                        <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="3"> TUE</label>
+                        <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="4"> WED</label>
+                        <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="5"> THU</label>
+                        <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="6"> FRI</label>
+                        <label class="inline-label"><input class="time-week-checkbox" type="checkbox" name="week" value="7"> SAT</label>
+                    </p>
+                   </div>
+                   <h4 class="clear-both">Action</h4>
+                   <div class="oneSide-block left clear-both" >
+                    <P>Ligth 1 :
+                        <select>
+                            <option>on</option>
+                            <option>off</option>
+                        </select>
+                        <span class="font-btn def">X</span>
+                    </P>
+                   </div>
+                   <div class="oneSide-block left chartTitle">
+
+                    <h4>Action Device</h4>
+                    <P><input type="text" placeholder="&#xF002; Search device" style="font-family:Arial, FontAwesome"></P>
+                    <ul>
+                        <li>
+                            <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            Light 1
+                        </li>
+                        <li>
+                            <div class="deviceIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            Light 2
+                        </li>
+                    </ul>
+                   </div>
+
+                   <div class="-btn def float-left clear-both mr-b-50px">SUBMIT</div>
+                </div>
+
+            </div>
+            <!-- /main-->
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $('.main-block').css('height',$(window).height()-80+'px');
+    </script>
+
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/amios.js"></script>
+    <script type="text/javascript">
+        $('.edit').click(function(){
+            amios.blockSlideTo('RuleEdit');
+        });
+
+        $('.back').click(function(){
+            amios.blockSlideTo('RuleList');
+        });
+    </script>
+</body>
+
+</html>
