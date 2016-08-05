@@ -1,0 +1,23 @@
+{
+  "nodes":[
+    {"name":"Location","group":"Location"},
+    {"name":"Gateway","group":"Gateway"},
+    {"name":"Gateway","group":"Gateway"},
+    {"name":"Device"},
+    {"name":"Device"},
+    {"name":"Device"},
+    {"name":"Device"},
+    {"name":"Device"},
+    {"name":"Device"}
+  ],
+  "links":[
+    {"source":0,"target":1,"value":1},
+    {"source":0,"target":2,"value":1},
+    {"source":1,"target":3,"value":1},
+    {"source":1,"target":4,"value":1},
+    {"source":2,"target":5,"value":1},
+    {"source":2,"target":6,"value":1},
+    {"source":2,"target":7,"value":1},
+    {"source":7,"target":8,"value":1}
+  ]
+}
