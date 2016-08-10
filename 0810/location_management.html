@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" >
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <style type="text/css">
+
+        html,body{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        h6{
+            font-size: 5em;
+            color: rgba(76,191,255,1);
+        }
+
+        table.detail{
+            width: 80%;
+        }
+
+        table.detail tr{
+            border: 5px solid  rgba(24,24,24,1);
+            border-right: 0;
+            border-left: 0;
+        }
+
+        table.detail td{
+            padding: 5px;
+            list-style-type: none;
+            height: 1.5em;
+            line-height: 1.5em;
+            font-size: 1.0em;
+/*            background: rgba(50,50,50,1);*/
+        }
+
+        table.detail tr td:first-child{
+            background: rgba(255,255,255,.2);
+            width: 150px;
+        }
+
+        table.detail input{
+            margin-left: 1px;
+            background-color:inherit;
+            border: 0;
+            border-bottom:solid 1px rgba(255,255,255,.5);
+            color: white;
+        }
+
+        table.detail select{
+            width: 170px;
+            display: inline-block;
+            margin:0 5px 0 0;
+            border-radius: 0;
+            background-color: rgba(24,24,24,1);
+            color: white;
+            border: 0;
+            border-bottom:solid 1px rgba(255,255,255,.5);
+            padding-left: 0px;
+        }
+
+        /* _btn */
+        button._btn{
+            background:rgba(76,191,255,1);
+            border: 0;
+            width: 110px;
+            height: 35px;
+/*            border-radius: 17px;*/
+            margin-right: 15px;
+        }
+
+        button._btn:hover{
+            background:inherit;
+            border: 1.5px solid rgba(76,191,255,1);
+            width: 110px;
+            height: 35px;
+/*            border-radius: 17px;*/
+            margin-right: 15px;
+        }
+        /*sub*/
+        span.sub{
+            margin-top: -17px;
+            margin-left: 6px;
+            display: block;
+        }
+
+        /*lm*/
+        div.subview{
+            padding: 0;
+            margin-right: auto;
+            margin-left: auto;
+            overflow: auto;
+        }
+
+        /*oocss*/
+        .h100{
+            height: 100%;
+        }
+
+        .h50{
+            height: 50%;
+        }
+
+        .h33{
+            height: 33.3%;
+        }
+
+        .pd0{
+            padding: 0px;
+        }
+
+        .pd3{
+            padding: 3px;
+        }
+
+        .bg0{
+            background: rgba(30,30,30,1);
+        }
+
+        .font300{
+            font-weight: 300;
+        }
+
+        /* right Submenu */
+        .right-submenu{
+            width: 20%;
+            height: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            vertical-align: top;
+            padding: 0px;
+            background: rgba(30,30,30,1);
+           /* border-right: solid 1px  rgba(255,255,255,.2); */
+        }
+
+        .grid{
+            background: rgba(24,24,24,1);
+            border: 5px solid rgba(30,30,30,1);
+        }
+
+        .grid h4{
+            font-size: 0.8em;
+            color: rgba(255,255,255,.6);
+        }
+
+        .grid ul{
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid ul li{
+            padding: 5px 0 5px 5px;
+            list-style-type:none;
+            color: rgba(255,255,255,.6);
+        }
+
+        .grid ul li+li:hover{
+            background:rgba(255,255,255,.2);
+            cursor: pointer;
+            color: rgba(76,191,255,1);
+        }
+
+        .grid ul li.active{
+            text-decoration: none;
+            border-left: solid 5px rgba(76,191,255,1);
+            color: white;
+        }
+
+        /* center page */
+
+        .center-page{
+            padding-top: 25px;
+        }
+
+        .center-page input{
+            display:inline-block;
+            background-color:inherit;
+            border: 0;
+            border-bottom:solid 1px rgba(255,255,255,.5);
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+            margin: 15px;
+        }
+
+        /*checkbox-block*/
+         input[type='checkbox'].checkbox-big{
+            display:inline-block;
+            color: white;
+            font-size: 1.5em;
+            width: 1em;
+            height: 1em;
+        }
+
+        .gateway-table{
+            width: 100%;
+        }
+
+        .gateway-table th{
+            font-size: 0.8rem;
+            color: rgba(255,255,255,.6);
+/*            font-weight: normal;*/
+        }
+        /*active*/
+        .active-l{
+            border-left: solid 5px rgba(76,191,255,1);
+        }
+
+        .active-r{
+            border-right: solid 5px rgba(76,191,255,1);
+        }
+
+        /*any*/
+        .anyhover{
+            cursor: pointer;
+        }
+
+        .anyhover:hover{
+           color: rgba(76,191,255,1);
+        }
+
+        /*scroll_subview*/
+
+        .scroll_subview{
+            width: 100%;
+            height: 100%;
+        }
+
+        /*h2title*/
+
+        .h2title{
+/*            margin-top: 15%;*/
+            margin: 0 0 5% 0;
+        }
+
+        /* */
+        select.bottom-style {
+            display: inline-block;
+            margin: 0 5px 0 0;
+            border-radius: 0;
+            background-color: rgba(24,24,24,1);
+            color: white;
+            border: 0;
+            border-bottom: solid 1px rgba(255,255,255,.5);
+            padding-left: 0px;
+        }
+
+        .input-lg-b {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+<!--                 <li class="sidebar-brand">
+                    <a href="#">
+                        IOT_OS
+                    </a>
+                </li> -->
+                <li>
+                    <a href="#"  class="active"><i class="fa fa-cog" aria-hidden="true"></i>LOCATION MANAGEMENT</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-map" aria-hidden="true"></i>MAP</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calculator" aria-hidden="true"></i>CALCULATOR</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-folder" aria-hidden="true"></i>FORDER</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>PLUGINS</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-camera" aria-hidden="true"></i>CAMERA</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-cloud" aria-hidden="true"></i>CLOUD</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <div class="submenu">
+            <ul>
+                <li  class="active">LOCATION MANAGEMENT</li>
+                <li>LOCATION MANAGEMENT2</li>
+                <li>ADD NEW LOCATION</li>
+                <li>ADD NEW GETEWAYS</li>
+                <li>ADD NEW DEVICE</li>
+            </ul>
+        </div>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="subview" id="location_management">
+                <div class="h100">
+                    <div class="col-lg-8 col-xs-8 h100 detailview">
+                        <h2>Device 3</h2>
+<!--                         <span class="sub">LIGHT</span> -->
+                        <table class="detail">
+                            <tbody>
+                                <tr><td class="text-right">Location </td><td>Room 1</td></tr>
+                                <tr><td class="text-right">Geteway </td><td>Geteway 2</td></tr>
+                                <tr><td class="text-right">DisplayName </td><td><input value="Device 3"></td></tr>
+                                <tr><td class="text-right">Ip </td><td>127.8.65.5</td></tr>
+                                <tr><td class="text-right">Status </td><td> Online</td></tr>
+                            </tbody>
+                        </table>
+                        <P></P>
+                        <button class="_btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</button>
+                        <button class="_btn"><i class="fa fa-reply" aria-hidden="true"></i> CANCEL</button>
+                    </div>
+                    <div class="col-lg-4 col-xs-4 h100 bg0 pd3">
+                         <div class="col-lg-12 h33 grid pd0">
+                            <ul>
+                                <li><h4>Location</h4></li>
+                                <li class="active">Room 1</li>
+                                <li>Room 2</li>
+                                <li>Room 3</li>
+                            </ul>
+                         </div>
+                         <div class="col-lg-12 h33 grid pd0">
+                            <ul>
+                                <li><h4>Geteway</h4></li>
+                                <li>Geteway 1</li>
+                                <li class="active">Geteway 2</li>
+                                <li>Geteway 2 (Room 2)</li>
+                                <li>Geteway 3</li>
+                            </ul>
+                         </div>
+                         <div class="col-lg-12 h33 grid pd0">
+                            <ul>
+                                <li><h4>Device</h4></li>
+                                <li>Device 1</li>
+                                <li>Device 2</li>
+                                <li  class="active">Device 3</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subview" id="location_management2">
+                <div class="col-lg-12 h50 bg0 pd0">
+                    <div class="col-lg-4 col-xs-4 h100 grid" style="border-left: 0;">
+                        <ul>
+                            <li><h4>Location</h4></li>
+                            <li class="active">Room 1</li>
+                            <li>Room 2</li>
+                            <li>Room 3</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xs-4 h100 grid">
+                        <ul>
+                            <li><h4>Geteway</h4></li>
+                            <li>Geteway 1</li>
+                            <li class="active">Geteway 2</li>
+                            <li>Geteway 2 (Room 2)</li>
+                            <li>Geteway 3</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xs-4 h100 grid">
+                        <ul>
+                            <li><h4>Device</h4></li>
+                            <li>Device 1</li>
+                            <li>Device 2</li>
+                            <li  class="active">Device 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12 h50 detailview">
+                        <h2>Device 3</h2>
+<!--                         <span class="sub">LIGHT</span> -->
+                        <table class="detail">
+                            <tbody>
+                                <tr><td class="text-right">Location </td><td>Room 1</td></tr>
+                                <tr><td class="text-right">Geteway </td><td>Geteway 2</td></tr>
+                                <tr><td class="text-right">DisplayName </td><td><input value="Device 3"></td></tr>
+                                <tr><td class="text-right">Ip </td><td>127.8.65.5</td></tr>
+                                <tr><td class="text-right">Status </td><td> Online</td></tr>
+                            </tbody>
+                        </table>
+                        <P></P>
+                        <button class="_btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</button>
+                        <button class="_btn"><i class="fa fa-reply" aria-hidden="true"></i> CANCEL</button>
+                </div>
+            </div>
+            <div class="subview" id="add_new_location">
+                <div class="col-lg-12 text-center center-page">
+                <h2 class="h2title">Add new location</h2>
+                <h6><i class="fa fa-map-marker fa-6" aria-hidden="true"></i></h6>
+                <input placeholder="Location name"><br/>
+                <button class="_btn" style="margin-right:0">SUBMIT</button>
+                </div>
+            </div>
+            <div class="subview" id="add_new_geteways">
+                <div class="col-lg-12  text-center center-page">
+                <h2 class="h2title">Add new geteways</h2>
+                <h6><i class="fa fa-cloud fa-6" aria-hidden="true"></i></h6>
+                </div>
+                <div class="col-lg-3 text-right">
+                </div>
+                <div class="col-lg-6 text-center  center-page">
+                <table class="gateway-table"> 
+                    <thead> 
+                        <tr>
+                            <th></th> <th class="text-center">Geteway name</th> <th  class="text-center">Location</th> 
+                        </tr>
+                    </thead> 
+                    <tbody> 
+                        <tr> 
+                            <td><input type="checkbox" id="inlineCheckbox1" value="option1" class="checkbox-big"></td> 
+                            <td><input value="GATEWAY-7845451"></td> 
+                            <td>
+                                <select class="form-control input-lg-b bottom-style">
+                                <option>Room 1</option>
+                                </select>
+                            </td>
+                        </tr> 
+                        <tr> 
+                            <td><input type="checkbox" id="inlineCheckbox1" value="option1" class="checkbox-big"></td> 
+                            <td><input value="GATEWAY-7845451"></td> 
+                            <td>
+                                <select class="form-control input-lg-b bottom-style">
+                                <option>Room 1</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr> 
+                            <td><input type="checkbox" id="inlineCheckbox1" value="option1" class="checkbox-big"></td> 
+                            <td><input value="GATEWAY-7845451"></td> 
+                            <td>
+                                <select class="form-control input-lg-b bottom-style">
+                                <option>Room 1</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody> 
+
+                </table>
+                <p></p>
+                        <button class="_btn"><i class="fa fa-cloud-upload" aria-hidden="true"></i> SUBMIT</button>
+                        <button class="_btn"><i class="fa fa-refresh" aria-hidden="true"></i> REFRESH</button>
+                </div>
+                <div class="col-lg-3 text-left">
+                </div>
+            </div>
+            <div class="subview" id="add_new_device">
+                
+<!--                     
+                    <br/><br/><br/>
+                    <h4>STEP3</h4>
+                    <p>Give it a name</p>
+                    <p><input value="" placeholder="Device name"></p>
+                    <br/><br/><br/>
+                    <h4>FINISH</h4>
+                    <button class="_btn" style="margin-right:0">SUBMIT</button> -->
+                    <div class="scroll_subview" style="height:75%;">
+                        <div class="col-lg-12  text-center center-page">
+                            <h2 class="h2title">Add new device</h2>
+                            <h6><i class="fa fa-link" aria-hidden="true"></i></h6>
+                            <p class="font300">STEP 1</p>
+                            <h4>Select the gateway bound</h4>
+                            <select class="form-control input-lg-b bottom-style" style="width:150px;display:inline-block;">
+                                <option>Gateway 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="scroll_subview"  style="height:60%;">
+                        <div class="col-lg-12  text-center center-page">
+                            <h6><i class="fa fa-keyboard-o" aria-hidden="true"></i></h6>
+                            <p class="font300">STEP 2</p>
+                            <h4>Enter the serial number</h4>
+                            <p><input value="" placeholder="S/N"></p>
+                        </div>
+                    </div>
+                    <div class="scroll_subview"  style="height:40%;">
+                        <div class="col-lg-12  text-center center-page">
+                            <h6><i class="fa fa-tag" aria-hidden="true"></i></h6>
+                            <p class="font300">STEP 3</p>
+                            <h4>Give it a name</h4>
+                            <p><input value="" placeholder="Device name"></p>
+                        </div>
+                    </div>
+                    <div class="scroll_subview"  style="height:40%;">
+                        <div class="col-lg-12  text-center center-page">
+                            <!-- <h6><i class="fa fa-upload" aria-hidden="true"></i></h6> -->
+                            <p class="font300">FINISH</p><br/>
+                            <p><button class="_btn" style="margin-right:0"><i class="fa fa-cloud-upload" aria-hidden="true"></i> SUBMIT</button></p>
+                        </div>
+                    </div>           
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+<!--     <div class="right-submenu">
+        <div class="grid">
+            <ul>
+                <li><h4>Location</h4></li>
+                <li class="active">Room 1 (off)</li>
+                <li>Room 2</li>
+                <li>Room 3</li>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul>
+                <li><h4>Geteway</h4></li>
+                <li>Geteway 1</li>
+                <li class="active">Geteway 2</li>
+                <li>Geteway 3 (off)</li>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul>
+                <li><h4>Device</h4></li>
+                <li>Device 1</li>
+                <li>Device 2 (off)</li>
+                <li  class="active">Device 3</li>
+            </ul>
+        </div>
+    </div> -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.subview').height( $(window).height() );
+
+            $('.submenu li').click(function(){
+                $('.submenu li').removeClass('active');
+                $(this).addClass('active');
+
+                var tar = $(this).html().toLowerCase().replace(/ /g,"_");
+                var newTop = $('#'+tar).offset().top;
+                var oldTop = $('#page-content-wrapper').css('marginTop').replace('px','')-0;
+                $('#page-content-wrapper').css('marginTop',oldTop-newTop);
+            });
+
+
+            $('#sidebar-wrapper').hover(function(){
+                if( $(this).css('width') === '56px' ){
+                    var width = $(this).width()+$(window).width()*.15;
+                    $(this).css('width',width);
+                }else{
+                    $(this).css('width','56px');
+                }
+                
+                console.log( $(this).css('width') );
+            });
+
+
+            $('.grid ul li').click(function(){
+                var detailhtml = {
+                    room:'<h2>Room</h2>'+
+                        '<table class="detail">'+
+                            '<tbody>'+
+                               '<tr><td class="text-right">Location </td><td>Room 1</td></tr>'+
+                               '<tr><td class="text-right">Geteway </td><td>Geteway 2</td></tr>'+
+                                '<tr><td class="text-right">DisplayName </td><td><input value="Device 3"></td></tr>'+
+                                '<tr><td class="text-right">Ip </td><td>127.8.65.5</td></tr>'+
+                                '<tr><td class="text-right">Status </td><td> Online</td></tr>'+
+                            '</tbody>'+
+                        '</table>'+
+                        '<P></P>'+
+                        '<button class="_btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</button>'+
+                        '<button class="_btn"><i class="fa fa-reply" aria-hidden="true"></i> CANCEL</button>',
+                    geteway:'<h2>Geteway</h2>'+
+                        '<table class="detail">'+
+                            '<tbody>'+
+                               '<tr><td class="text-right">Location </td><td>Room 1 <i class="fa fa-plus-square-o anyhover" aria-hidden="true"></i></td></tr>'+
+                                '<tr><td class="text-right">DisplayName </td><td><input value="Device 3"></td></tr>'+
+                                '<tr><td class="text-right">Ip </td><td>127.8.65.5</td></tr>'+
+                                '<tr><td class="text-right">Status </td><td> Online</td></tr>'+
+                            '</tbody>'+
+                        '</table>'+
+                        '<P></P>'+
+                        '<button class="_btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</button>'+
+                        '<button class="_btn"><i class="fa fa-reply" aria-hidden="true"></i> CANCEL</button>',
+                    device:'<h2>Device</h2>'+
+                        '<table class="detail">'+
+                            '<tbody>'+
+                               '<tr><td class="text-right">Location </td><td>Room 1</td></tr>'+
+                               '<tr><td class="text-right">Geteway </td><td>Geteway 2</td></tr>'+
+                                '<tr><td class="text-right">DisplayName </td><td><input value="Device 3"></td></tr>'+
+                                '<tr><td class="text-right">Ip </td><td>127.8.65.5</td></tr>'+
+                                '<tr><td class="text-right">Status </td><td> Online</td></tr>'+
+                            '</tbody>'+
+                        '</table>'+
+                        '<P></P>'+
+                        '<button class="_btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</button>'+
+                        '<button class="_btn"><i class="fa fa-reply" aria-hidden="true"></i> CANCEL</button>',
+                };
+
+                $(this).parents('.grid').find('li').removeClass('active');
+                $(this).addClass('active');
+
+                $('.detailview').html( detailhtml[ $(this).html().split(' ')[0].toLowerCase() ] );
+                $('.detailview h2').html( $(this).html() );
+                //$('.detailview').html
+
+            })
+
+            $('.detailview').on('click','.fa-plus-square-o',function(){
+                $(this).parents('tr').after('</tr><tr><td class="text-right" style="BACKGROUND-COLOR: #181818;"></td><td><select class="form-control"><option>Room 2</option></select><i class="fa fa-minus-square-o anyhover" aria-hidden="true"></i></td>');
+            });
+
+            $('.detailview').on('click','.fa-minus-square-o',function(){
+                $(this).parents('tr').remove();
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>
