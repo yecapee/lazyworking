@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Small Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/amios.css" rel="stylesheet" >
+
+    <!-- Custom CSS -->
+<!--     <link href="css/small-business.css" rel="stylesheet"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="bg-white">
+<div class="transitions">
+    <div class="statusline"></div>
+    <div class="loadtext">0%</div>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-mobile" href="#">
+                    <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                	<li style="width:16.666%" class="text-right brand-desk">
+                		<a class="navbar-brand" href="#"  style="color:rgba(76,191,255,1);width:100%">
+		                   <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+		                </a>
+                	</li>
+                    <li>
+                        <a href="location.html" class="active">DEVICE</a>
+                    </li>
+<!--                     <li>
+                        <a href="scene.html">SCENE MODE</a>
+                    </li> -->
+<!--                     <li>
+                        <a href="rule.html">RULE ENGINE</a>
+                    </li> -->
+
+                    <li>
+                        <a href="account.html">ACCOUNT</a>
+                    </li>
+                    <li>
+                        <a href="monitor.html">MONITOR</a>
+                    </li>
+                    <li>
+                        <a href="system.html">SYSTEM</a>
+                    </li>
+                    <li class="userInfo">
+                        <span > Hello <b>Jessie</b> </span><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div class="container main-body">
+
+        <div class="row" style="position: relative">
+            <div class="subtitle-block">
+            	<ul class="subtitle">
+                    <li class="main sub_device"><h6>DEVICE</h6></li>
+	                <li class="active hook locationList hide"><span>Location list</span></li>
+                    <!-- <li class="hook">Location list2</li> -->
+	                <li class="hook addNewLocation hide"><span>Add new location</span></li>
+	                <li class="hook addNewGeteways hide"><span>Add new geteways</span></li>
+	                <li class="hook addNewDevice hide"><span>Add new device</span></li>
+                    <!-- <li><h6><a href="scene.html">SCENE MODE</a></h6></li> -->
+                    <!-- <li><h6><a href="rule.html">RULE ENGINE</a></h6></li> -->
+                    <!-- <li><h6><a href="monitor.html">MONITOR</a></h6></li> -->
+            	</ul>
+            </div>
+            <div class="col-md-2"></div>
+            <!-- /main -->
+            <div class="col-md-10 main-block">
+
+                <!-- <div id="location_list" class="sub-block scroll">
+                    <h2>Location list</h2>
+<!--                     <table class="table">
+                        <thead> <tr> <th>#</th> <th>Location Name</th> <th></th> <th></th> </tr> </thead>
+                        <tbody>
+                            <tr> <th scope="row">1</th> <td>Room 1</td> <td></td> <td class="text-right"><div class="-btn def">EDIT</div><div class="-btn def">DELETE</div></td> </tr>
+                            <tr> <th scope="row">2</th> <td>Room 2</td> <td></td> <td class="text-right"><div class="-btn def">EDIT</div><div class="-btn def">DELETE</div></td> </tr>
+                            <tr> <th scope="row">3</th> <td>Room 3</td> <td></td> <td class="text-right"><div class="-btn def">EDIT</div><div class="-btn def">DELETE</div></td> </tr>
+                        </tbody>
+                    </table> 
+                        <div class="oneSide-block left">
+                            <h4>Room 1</h4>
+                            <p><label>DisplayName</label>
+                                <input placeholder="Location name">
+                            </p>
+                            <label>Map</label>
+                            <div class="mapImg"><i class="fa fa-map-o" aria-hidden="true"></i></div>
+                            <input type="file" style="display:none" name="pic" id="map" accept="image/*">
+                        </div>
+
+                        <div class="oneSide-block left loclist">
+                            <h4>Location List</h4>
+                            <ul>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 1
+                                </li>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 2
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="clear-both"></div>
+                        <div class="-btn def  clear-both mr-b-50px">SAVE</div>
+                        <div class="clear-both"></div>
+                        <div class="oneSide-block left loclist">
+                            <h4>Gateway List</h4>
+                            <ul>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-sitemap" aria-hidden="true"></i></div>
+                                    Gateway 1
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="oneSide-block left">
+                            <h4>Gateway 1</h4>
+                            <p><label>DisplayName</label>
+                                <input placeholder="DisplayName" value="Gateway 1">
+                            </p>
+                            <p><label>Location</label>
+                                <input placeholder="Location name" value="Room 1">
+                            </p>
+                            <p><label>Ip</label>
+                                <input placeholder="Ip" value="125.125.125.2">
+                            </p>
+                            <p><label>Status</label>Online</p>
+                        </div>
+
+
+
+                        <div class="clear-both"></div>
+                        <div class="-btn def  clear-both mr-b-50px" style="margin-left: 49%;">SAVE</div>
+                        <div class="clear-both"></div>
+
+                    
+                        <div class="oneSide-block left">
+                            <h4>Light 1</h4>
+                            <label>Icon</label>
+                                <div class="mapImg"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            <p><label>DisplayName</label>
+                                <input placeholder="DisplayName" value="Light 1">
+                            </p>
+                            <p><label>BundleName</label>
+                                <input placeholder="BundleName" value="7wd56qd31dqw">
+                            </p>
+                            <p><label>Gateway</label>
+                                <input placeholder="Gateway name" value="Gateway 1">
+                            </p>
+                            <p><label>Location</label>
+                                <input placeholder="Location name" value="Room 1">
+                            </p>
+                            <p><label>Status</label>Online</p>
+                        </div>
+
+                        <div class="oneSide-block left loclist">
+                            <h4>Device List</h4>
+                            <ul>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                    Light 1
+                                </li>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                    Light 2
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="clear-both"></div>
+                    <div class="-btn def mr-b-50px">SAVE</div>
+                        
+                </div> -->
+
+                <div id="location_list" class="sub-block hide locationList">
+                    <div class="three-block">
+                            <h4>Location List</h4>
+                            <ul>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 1
+                                    <i class="fa fa-trash-o icon_del" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 2
+                                    <i class="fa fa-trash-o icon_del" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="three-block">
+                            <h4>Gateway List</h4>
+                            <ul>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-sitemap" aria-hidden="true"></i></div> Gateway 1
+                                     <i class="fa fa-trash-o icon_del" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="three-block">
+                            <h4>Device List</h4>
+                            <ul>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div> Light 1
+                                     <i class="fa fa-trash-o icon_del" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <div class="locIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div> Light 2
+                                     <i class="fa fa-trash-o icon_del" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="three-block detail scroll">
+                            <h4>Room 1
+                                <span style="display: inline-block;float:right">
+                                    <div class="onoffswitch">
+                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2">
+                                            <label class="onoffswitch-label" for="myonoffswitch2">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                            </label>
+                                    </div>
+                                </span>
+                            </h4>
+
+                            <p><label>DisplayName</label>
+                                <input placeholder="Location name">
+                            </p>
+                            <p>
+                                <label>description</label>
+                                <input placeholder="description">
+                            </p>
+                            <label>Map</label>
+                            <div class="mapImg"><i class="fa fa-map-o" aria-hidden="true"></i></div>
+                            <input type="file" style="display:none" name="pic" id="map" accept="image/*">
+                            <p><div class="-btn def mr-b-50px">SAVE</div></p>
+                    </div>
+                    <div class="three-block detail scroll">
+                            <h4>Gateway 1</h4>
+                            <p><label>DisplayName</label>
+                                <input placeholder="DisplayName" value="Gateway 1">
+                            </p>
+                            <p><label>Location</label>
+                                <input placeholder="Location name" value="Room 1">
+                            </p>
+                            <p><label>Ip</label>
+                                <input placeholder="Ip" value="125.125.125.2">
+                            </p>
+                            <p><label>Status</label>Online</p>
+                            <p><div class="-btn def mr-b-50px">SAVE</div></p>
+                    </div>
+                    <div class="three-block detail scroll">
+                            <h4>Light 1</h4>
+                            <label>Icon</label>
+                                <div class="mapImg"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            <p><label>DisplayName</label>
+                                <input placeholder="DisplayName" value="Light 1">
+                            </p>
+                            <p><label>BundleName</label>
+                                <input placeholder="BundleName" value="7wd56qd31dqw">
+                            </p>
+                            <p><label>Gateway</label>
+                                <input placeholder="Gateway name" value="Gateway 1">
+                            </p>
+                            <p><label>Location</label>
+                                <input placeholder="Location name" value="Room 1">
+                            </p>
+                            <p><label>Polling time(m)</label>
+                                <input placeholder="0-20" value="">
+                            </p>
+                            <p><label>Status</label>Online</p>
+                            <p><div class="-btn def mr-b-50px">SAVE</div></p>
+                    </div>
+                </div>
+
+                <div  id="add_new_location" class="sub-block hide addNewLocation">
+                   
+                    <div class="icon"><i class="fa fa-map-marker fa-6" aria-hidden="true"></i></div>
+<!--                         <h2>Add new location</h2>
+                        <p><input  placeholder="Location name"></p>
+                        <p><input  placeholder="Map image" class="file"></p>
+                        <p><input  placeholder="description" class="file"></p>
+                        <div class="-btn def">SUBMIT</div> -->
+
+                    <div class="oneSide-block right">
+                        <h2>Add new location</h2>
+                        <p><input  placeholder="Location name"></p>
+                        <p><input  placeholder="Map image" class="file"></p>
+                        <p><input  placeholder="description" ></p>
+                        <div class="-btn def">SUBMIT</div>
+                    </div>
+                </div>
+
+
+
+                <div  id="add_new_geteways" class="sub-block hide addNewGeteways">
+                    <!-- <div class="icon" style="float:right"><i class="fa fa-cloud fa-6" aria-hidden="true"></i></div> -->
+                    <h2>Add new geteways</h2>
+                    <p>                   
+                        <table class="table" id="AddNewGeteways_table">
+                        <thead> <tr> <th>#</th> <th style="width:200px">Geteway name</th> <th>Ip</th> <th>Mac Address</th> <th>Location</th> </tr> </thead>
+                        <tbody>
+                            <tr> <th scope="row"><input type="checkbox"></th> 
+                                <td><input type="text" value="GATEWAY-7845451"></td>
+                                <td>192.168.3.21</td>
+                                <td>A0-3F-D5-63-36-2A</td>
+                                <td>
+                                    <div class="tdline">
+                                    <select class="">
+                                    <option>Room 1</option>
+                                    </select> <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true" ></i>
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr> <th scope="row"><input type="checkbox"></th> 
+                                <td><input type="text" value="GATEWAY-7845451"></td>
+                                <td>192.168.3.21</td>
+                                <td>A0-3F-D5-63-36-2A</td> 
+                                <td>
+                                    <div>
+                                    <select class="">
+                                    <option>Room 1</option>
+                                    </select> <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                                    </div>
+                                </td> 
+                            </tr>
+                        </tbody>
+                        </table>
+                    </p>
+                    <div class="-btn def">SUBMIT</div><div class="-btn def">REFRESH</div>
+                </div>
+
+
+
+                <div id="add_new_device" class="sub-block scroll hide addNewDevice">
+                    <h2>Add new device</h2>
+
+                    <div class="block">  
+                        <div class="icon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+                        STEP 1
+                        <h2>Enter the serial number</h2>
+                        <input  value="" placeholder="S/N">
+                    </div>
+
+                    <div class="block text-right"> 
+                        <div class="icon"  style="float:right"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                        STEP 2
+                        <h2>Give it a name</h2>
+                        <input value=""   class="text-right" placeholder="Device name">
+                    </div>
+
+                    <div class="block"> 
+                        <div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div>
+                        STEP 3
+                        <h2>Select the gateway bound</h2>
+                        <select>
+                            <option>Gateway 1</option>
+                        </select>
+                    </div>
+
+                    <div class="block text-right">  
+                        <div class="icon" style="float:right"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+                        <h2>FINISH</h2>
+                        <div class="-btn def">SUBMIT</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- /main-->
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $('.main-block').css('height',$(window).height()-80+'px');
+        $('.mapImg,.file').click(function () {
+           document.getElementById('map').click();
+        });
+
+        $('.addlocation').click(function(){
+            var parents = $(this).parents('td');
+            parents.append('<div class="tdline"><select class=""><option>Room 1</option></select> <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i></div>');
+        });
+
+        $('#AddNewGeteways_table').on('click','.dellocation',function(){
+            var parents = $(this).parents('.tdline').remove();
+        });
+
+        // $('.icon_del').hover(
+        //     function(){
+        //         $(this).parents('li').addClass('bg-3896ca');
+        //     },
+        //     function(){
+        //         $(this).parents('li').removeClass('bg-3896ca');
+        // });
+        
+    </script>
+    
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/amios.js"></script>
+    <script src="config.js"></script>
+
+</body>
+
+</html>
