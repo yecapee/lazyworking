@@ -37,6 +37,7 @@ var config = {
 function powerSet () {
 
 	var path = location.pathname.match(/\/(.*).html/)[1];
+	var path = location.pathname.match(/(\/(.*)\/)(.*).html/)[3];
 	var source = config.power[path];
 
 	for(var key in source){
