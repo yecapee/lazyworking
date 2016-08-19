@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Small Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/amios.css" rel="stylesheet" >
+
+    <!-- Custom CSS -->
+<!--     <link href="css/small-business.css" rel="stylesheet"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="bg-white">
+<div class="transitions">
+    <div class="statusline"></div>
+    <div class="loadtext">0%</div>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-mobile" href="#">
+                    <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                	<li style="width:16.666%" class="text-right brand-desk">
+                		<a class="navbar-brand" href="#"  style="color:rgba(76,191,255,1);width:100%">
+		                   <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+		                </a>
+                	</li>
+                    <li>
+                        <a href="location.html">DEVICE</a>
+                    </li>
+<!--                     <li>
+                        <a href="scene.html">SCENE MODE</a>
+                    </li> -->
+<!--                     <li>
+                        <a href="rule.html">RULE ENGINE</a>
+                    </li> -->
+
+                    <li>
+                        <a href="account.html"  class="active">ACCOUNT</a>
+                    </li>
+                    <li>
+                        <a href="monitor.html">MONITOR</a>
+                    </li>
+                    <li>
+                        <a href="system.html">SYSTEM</a>
+                    </li>
+                    <li class="userInfo">
+                        <span > Hello <b>Jessie</b> </span><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div class="container main-body">
+
+        <div class="row" style="position: relative">
+            <div class="subtitle-block">
+            	<ul class="subtitle">
+                    <li class="main"><h6>ACCOUNT</h6></li>
+	                <li class="active hook hide accountList"><span>Account list</span></li>
+	                <li class="hook hide createNewAccount"><span>Create new account</span></li>
+	                <li class="hook hide changeMyPassword"><span>Change my password</span></li>
+	                <li class="hook hide roleOfRightsManagement"><span>Role of rights management</span></li>
+            	</ul>
+            </div>
+            <div class="col-md-2"></div>
+            <!-- /main -->
+            <div class="col-md-10 main-block">
+
+                <div id="account_list" class="sub-block hide accountList">
+                    <h2>Account list</h2>
+                    <table class="table">
+                        <thead> <tr> <th>#</th> <th>Account</th> <th>Name</th> <th>Role</th> <th>Email</th> <th></th> </tr> </thead>
+                        <tbody>
+                            <tr> 
+                                <th scope="row">1</th> 
+                                <td>panpanpan</td> 
+                                <td>panpanpan</td>
+                                <td>admin</td> 
+                                <td>panpanpan@gmail.com</td>
+                                <td class="text-right"><div class="-btn def">EDIT</div><div class="-btn def">DELETE</div></td> 
+                            </tr>
+                            <tr> 
+                                <th scope="row">2</th> 
+                                <td>panpanpan</td> 
+                                <td>panpanpan</td>
+                                <td>admin</td> 
+                                <td>panpanpan@gmail.com</td>
+                                <td class="text-right"><div class="-btn def">EDIT</div><div class="-btn def">DELETE</div></td> 
+                            </tr>
+                            <tr> 
+                                <th scope="row">3</th> 
+                                <td>panpanpan</td> 
+                                <td>panpanpan</td>
+                                <td>admin</td> 
+                                <td>panpanpan@gmail.com</td>
+                                <td class="text-right"><div class="-btn def">EDIT</div><div class="-btn def">DELETE</div></td> 
+                            </tr>
+                            <tr> 
+                                <th scope="row">4</th> 
+                                <td>panpanpan</td> 
+                                <td>panpanpan</td>
+                                <td>admin</td> 
+                                <td>panpanpan@gmail.com</td>
+                                <td class="text-right"><div class="-btn def">EDIT</div><div class="-btn def">DELETE</div></td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div  id="create_new_account" class="sub-block hide createNewAccount">
+                   
+                    <div class="icon"><i class="fa fa-registered fa-6" aria-hidden="true"></i></div>
+                    <div class="oneSide-block right">
+                      <h2>Create new account</h2>
+                      <p><input  placeholder="Account"></p>
+                      <p><input type="password" placeholder="Password"></p>
+                      <p><input type="password" placeholder="Confirm password"></p>
+                      <p><input  placeholder="Employee name"></p>
+                      <p>
+                        <select>
+                            <option value="" disabled="" selected="">Select Role</option>
+                            <option>admin</option>
+                            <option>normal user</option>
+                        </select>
+                      </p>
+                      <p><input  placeholder="Email"></p>
+                      <div class="-btn def">SUBMIT</div>
+                    </div>
+
+                </div>
+
+
+
+                <div  id="change_my_password" class="sub-block hide changeMyPassword">
+                    <!-- <div class="icon" style="float:right"><i class="fa fa-cloud fa-6" aria-hidden="true"></i></div> -->
+                    <div class="icon right">***</div>
+                    <div class="oneSide-block left text-right">
+                      <h2>Change my password</h2>
+                      <p><input class="text-right" type="password" placeholder="Current password"></p>
+                      <p><input class="text-right" type="password" placeholder="New Password"></p>
+                      <p><input class="text-right" type="password" placeholder="Confirm password"></p>
+                      <div class="-btn def">SUBMIT</div>
+                    </div>
+
+                </div>
+
+
+
+                <div id="role_of_rights_management" class="sub-block scroll hide roleOfRightsManagement">
+                    <h2>Role of rights management :
+                                    <select>
+                                        <option>admin</option>
+                                        <option>normal user</option>
+                                    </select>
+                    </h2>
+                    <table class="table">
+                        <thead> 
+                            <tr> 
+                                <td width="50%"><h4>Device</h4></td> 
+                                <th>Edit</th> 
+                                <th>Read-only</th> 
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            <tr><th>Location list</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                            <tr><th>Add new location</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                            <tr><th>Add new geteways</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                            <tr><th>Add new device</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                        </tbody>
+                    </table>
+
+                     <table class="table">
+                        <thead> 
+                            <tr> 
+                                <td width="50%"><h4>Account</h4></td> 
+                                <th>Edit</th> 
+                                <th>Read-only</th> 
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            <tr><th>Account list</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                            <tr><th>Create new account</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                            <tr><th>Role of rights management</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                        </tbody>
+                    </table>
+
+                     <table class="table">
+                        <thead> 
+                            <tr> 
+                                <td width="50%"><h4>Monitor</h4></td> 
+                                <th>Edit</th> 
+                                <th>Read-only</th> 
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            <tr><th>Chart</th><td></td><td><input  type="radio"></td></tr>
+                            <tr><th>Report</th><td></td><td><input  type="radio"></td></tr>
+                            <tr><th>Polling time setting</th><td><input  type="radio"></td><td><input  type="radio"></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p><div class="-btn def">SUBMIT</div><div class="-btn def">CANCEL</div></p>
+
+                    <h2>Add new Role</h2>
+                    <p><input placeholder="Role name"></p>
+                    <div class="-btn def">SUBMIT</div>
+                    <p></p>
+                    
+                </div>
+
+
+            </div>
+            <!-- /main-->
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $('.main-block').css('height',$(window).height()-80+'px');
+    </script>
+    
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/amios.js"></script>
+    <script src="config.js"></script>
+
+</body>
+
+</html>
