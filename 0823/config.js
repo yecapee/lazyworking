@@ -3,6 +3,7 @@ var config = {
 	power:{
 		location:{
 			locationList:1,
+			groupSetting:1,
 			addNewLocation:1,
 			addNewGateways:1,
 			addNewDevice:1
@@ -37,6 +38,7 @@ var config = {
 function powerSet () {
 
 	var path = location.href.match(/(http\:\/\/(.*)\/)(.*)\.html/)[3];
+
 	var source = config.power[path];
 
 	for(var key in source){
@@ -49,3 +51,5 @@ function powerSet () {
 };
 
 powerSet();
+
+
