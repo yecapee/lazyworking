@@ -1,0 +1,8 @@
+{
+	"return_result": {
+		"serviceStatus": "true",
+		"serviceContent": "{\"limit\":1,\"message\":\"test_power_monitor\",\"bundle_name\":\"power_meter_55F64103004B1200-1.0\",\"mqtt_topic\":\"power_meter_55F64103004B1200-1.0\",\"subject\":\"test\",\"command\":\"enable\",\"email_address\":\"SamChen@ami.com.tw\"}",
+		"serviceName": "powerMonitor"
+	},
+	"return_code": 0
+}

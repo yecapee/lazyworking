@@ -1,0 +1,14 @@
+{
+	"return_result":{
+		"udpGatewayList":[
+			{"online":true,"gateway_ip":"172.16.8.82","gateway_mac_addr":"A0-3F-D5-63-36-2A"},
+			{"online":true,"gateway_ip":"172.16.8.83","gateway_mac_addr":"B0-3F-D5-63-36-2B"},
+			{"online":true,"gateway_ip":"172.16.8.84","gateway_mac_addr":"C0-3F-D5-63-36-2C"},
+			{"online":true,"gateway_ip":"172.16.8.85","gateway_mac_addr":"D0-3F-D5-63-36-2D"},
+			{"online":true,"gateway_ip":"172.16.8.86","gateway_mac_addr":"E0-3F-D5-63-36-2E"},
+			{"online":true,"gateway_ip":"172.16.8.87","gateway_mac_addr":"F0-3F-D5-63-36-2F"},
+			{"online":true,"gateway_ip":"172.16.8.88","gateway_mac_addr":"G0-3F-D5-63-36-2G"}
+			]
+	}
+	,"return_code":0
+}

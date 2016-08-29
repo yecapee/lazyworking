@@ -1,0 +1,26 @@
+{
+	"Ambient":{
+		"icon":"fa-lightbulb-o",
+		"comment":{}
+	},
+	"Data":{
+		"icon":"fa-bar-chart",
+		"comment":{}
+	},
+	"temperature":{
+		"icon":"fa-lightbulb-o",
+		"comment":{}
+	},
+	"step_motor":{
+		"icon":"fa-cogs",
+		"comment":{}
+	},
+	"Light":{
+		"icon":"fa-lightbulb-o",
+		"comment":{}
+	},
+	"Door":{
+		"icon":"fa-rocket",
+		"comment":{}
+	}
+}
