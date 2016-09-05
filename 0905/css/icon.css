@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?blzvqb');
+  src:  url('../fonts/icomoon.eot?blzvqb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?blzvqb') format('truetype'),
+    url('../fonts/icomoon.woff?blzvqb') format('woff'),
+    url('../fonts/icomoon.svg?blzvqb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-camera:before {
+  content: "\e900";
+}
+.icon-door:before {
+  content: "\e901";
+}
+.icon-fan:before {
+  content: "\e902";
+}
+.icon-humidity:before {
+  content: "\e903";
+}
+.icon-ph:before {
+  content: "\e904";
+}
+.icon-pir:before {
+  content: "\e905";
+}
+.icon-power:before {
+  content: "\e906";
+}
+.icon-projector:before {
+  content: "\e907";
+}
+.icon-rfid:before {
+  content: "\e908";
+}
+.icon-rtos:before {
+  content: "\e909";
+}
+.icon-screen:before {
+  content: "\e90a";
+}
+.icon-shadewindow:before {
+  content: "\e90b";
+}
+.icon-shot:before {
+  content: "\e90c";
+}
+.icon-soilhumidity:before {
+  content: "\e90d";
+}
+.icon-sunlight:before {
+  content: "\e90e";
+}
+.icon-temperature:before {
+  content: "\e90f";
+}
+

@@ -1,0 +1,76 @@
+{
+	"AMBIENTLIGHT":{
+		"icon":"fa-lightbulb-o",
+		"comment":{},
+		"type":""
+	},
+	"TEMPERATURE":{
+		"icon":"icon-temperature",
+		"comment":{
+			"Temperature":{
+				"cmdName":"TEMPERATURE",
+				"uiHtml":"<input type=\"text\" placeholder=\"-40~120\" data-cmd=\"TEMPERATURE\" id=\"{id}\" data-bundleName=\"{bundleName}\">"
+			},
+			"Humidity":{
+				"cmdName":"HUMIDITY",
+				"uiHtml":"<input type=\"text\" placeholder=\"0~100\" data-cmd=\"HUMIDITY\" id=\"{id}\" data-bundleName=\"{bundleName}\" >"
+			}
+		},
+		"type":"Condition"
+	},
+	"STEPMOTOR":{
+		"icon":"icon-shadewindow",
+		"comment":{
+			"Status":{
+				"cmdName":"Status",
+				"uiHtml":"<select><option data-bundleName=\"{bundleName}\">PERCENTAGE_0</option><option data-bundleName=\"{bundleName}\">PERCENTAGE_25</option><option data-bundleName=\"{bundleName}\">PERCENTAGE_50</option><option data-bundleName=\"{bundleName}\">PERCENTAGE_75</option><option data-bundleName=\"{bundleName}\">PERCENTAGE_100</option></select>"
+			}	
+		},
+		"type":"Action"
+	},
+	"LIGHT":{
+		"icon":"fa-lightbulb-o",
+		"comment":{
+			"Status":{
+				"cmdName":"Status",
+				"uiHtml":"<select><option data-bundleName=\"{bundleName}\" val=\"ON\">Open</option><option data-bundleName=\"{bundleName}\" val=\"OFF\">Close</option></select>"
+			}	
+		},
+		"type":"Action"
+	},
+	"DOORRELAY":{
+		"icon":"icon-door",
+		"comment":{
+			"Status":{
+				"cmdName":"Status",
+				"uiHtml":"<select><option data-bundleName=\"{bundleName}\" val=\"ON\">DoorOpen</option></select>"
+			}
+		},
+		"type":"Action"
+	},
+	"POWERMETER":{
+		"icon":"icon-power",
+		"comment":{
+			"Status":{
+				"cmdName":"Status",
+				"uiHtml":"<select><option data-bundleName=\"{bundleName}\" val=\"ON\">Open</option><option data-bundleName=\"{bundleName}\" val=\"OFF\">Close</option></select>"
+			}	
+		},
+		"type":""		
+	},
+	"RFID":{
+		"icon":"icon-rfid",
+		"comment":{},
+		"type":""		
+	},	
+	"PH":{
+		"icon":"icon-ph",
+		"comment":{},
+		"type":""		
+	},
+	"SOILMOISTURE":{
+		"icon":"icon-soilhumidity",
+		"comment":{},
+		"type":""		
+	}
+}

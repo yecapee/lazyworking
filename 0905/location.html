@@ -1,0 +1,932 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Small Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" >
+    <link href="css/icon.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/amios.css" rel="stylesheet" >
+
+    <!-- Custom CSS -->
+<!--     <link href="css/small-business.css" rel="stylesheet"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="bg-white">
+<div class="transitions">
+    <div class="statusline"></div>
+    <div class="loadtext">0%</div>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-mobile" href="#">
+                    <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                	<li style="width:16.666%" class="text-right brand-desk">
+                		<a class="navbar-brand" href="#"  style="color:rgba(76,191,255,1);width:100%">
+		                   <span style="font-weight:500">AMI</span><span style="font-weight:300">OS</span>
+		                </a>
+                	</li>
+                    <li>
+                        <a href="location.html" class="active">DEVICE</a>
+                    </li>
+<!--                     <li>
+                        <a href="scene.html">SCENE MODE</a>
+                    </li> -->
+<!--                     <li>
+                        <a href="rule.html">RULE ENGINE</a>
+                    </li> -->
+
+                    <li>
+                        <a href="account.html">ACCOUNT</a>
+                    </li>
+                    <li>
+                        <a href="monitor.html">MONITOR</a>
+                    </li>
+                    <li>
+                        <a href="system.html">SYSTEM</a>
+                    </li>
+                    <li class="userInfo">
+                        <span > Hello <b>Jessie</b> </span><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div class="container main-body">
+
+        <div class="row" style="position: relative">
+            <div class="subtitle-block">
+            	<ul class="subtitle">
+                    <li class="main sub_device"><h6>DEVICE</h6></li>
+	                <li class="active hook locationList hide"><span>Location list</span></li>
+                    <!-- <li class="hook">Location list2</li> -->
+                    <li class="hook groupSetting hide"><span>Group setting</span></li>
+	                <li class="hook addNewLocation hide"><span>Add new location</span></li>
+	                <li class="hook addNewGateways hide"><span>Add new gateways</span></li>
+	                <li class="hook addNewDevice hide"><span>Add new device</span></li>
+                    <!-- <li><h6><a href="scene.html">SCENE MODE</a></h6></li> -->
+                    <!-- <li><h6><a href="rule.html">RULE ENGINE</a></h6></li> -->
+                    <!-- <li><h6><a href="monitor.html">MONITOR</a></h6></li> -->
+            	</ul>
+            </div>
+            <div class="col-md-2"></div>
+            <!-- /main -->
+            <div class="col-md-10 main-block">
+
+                <div id="location_list" class="sub-block sub-block-slide hide locationList">
+                    <div class="page" id="location_list_main">
+                        <div class="three-block scroll">
+                                <h4>Location List <i class="fa fa-bars location_cog" aria-hidden="true"  style="font-size:14px;line-height: 1.9em;float: right;cursor: pointer;"></i></h4>
+                                <h6>6F</h6>
+                                <ul>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 1
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del room_edit" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 2
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del room_edit" aria-hidden="true"></i>
+                                    </li>
+                                </ul>
+                                <h6>5F</h6>
+                                <ul>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 1
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del room_edit" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 2
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del room_edit" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 3
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del room_edit" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Room 4
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del room_edit" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="three-block">
+                                <h4>Gateway List</h4>
+                                <ul>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-sitemap" aria-hidden="true"></i></div> Gateway 1
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del gw_edit" aria-hidden="true"></i>
+                                    </li>
+                                    <li class="noConnect">
+                                        <div class="locIcon"><i class="fa fa-sitemap" aria-hidden="true"></i></div> Gateway 2
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del gw_edit" aria-hidden="true"></i>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="three-block scroll">
+                                <h4>Device List</h4>
+                                <ul id="deviceList_view">
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div> Light 1
+                                        <i class="fa fa-circle-o light" aria-hidden="true"></i>
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del device_edit" aria-hidden="true"></i>
+                                    </li>
+                                    <li>
+                                        <div class="locIcon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div> Light 2
+                                        <i class="fa fa-circle-o light" aria-hidden="true"></i>
+                                        <i class="fa fa-trash-o icon_del" aria-hidden="true"></i> 
+                                        <i class="fa fa-cog  icon_del device_edit" aria-hidden="true"></i>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="three-block detail scroll">
+                                <h4>Room 1
+                                    <span style="display: inline-block;float:right">
+                                        <div class="onoffswitch">
+                                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2">
+                                                <label class="onoffswitch-label" for="myonoffswitch2">
+                                                    <span class="onoffswitch-inner"></span>
+                                                    <span class="onoffswitch-switch"></span>
+                                                </label>
+                                        </div>
+                                    </span>
+                                </h4>
+                                <P>
+                                    <label>Capacities</label>
+                                    10 to 15
+                                </P>
+                                <p>
+                                    <label>Device tag</label>
+                                    <span class="label label-default">Air conditioning</span><br/>
+                                    <span class="label label-default">Refrigerator</span><br/>
+                                    <span class="label label-default">TV</span>
+                                </p>
+                                <label>Map</label>
+                                <div class="mapImg"><i class="fa fa-map-o" aria-hidden="true"></i></div>
+                                <!-- <input type="file" style="display:none" name="pic" id="map" accept="image/*"> -->
+                                <p>
+                                    <label>Description</label>
+                                    big house
+                                </p>
+                               
+                                <!-- <p><div class="-btn def mr-b-50px">SAVE</div></p> -->
+                        </div>
+                        <div class="three-block detail scroll">
+                                <h4>Gateway 1
+<!--                                     <i class="fa fa-refresh" style="font-size:14px;line-height: 1.9em;float: right;cursor: pointer;" aria-hidden="true"></i> -->
+                                </h4>
+                                <p><label>Status</label>Online</p>
+                                <p><label>Location</label>
+                                 Room 1
+                                </p>
+                                <p><label>Ip</label>
+                                 125.125.125.2
+                                </p>
+                                <!-- <p><div class="-btn def mr-b-50px">SAVE</div></p> -->
+                        </div>
+                        <div class="three-block detail scroll" >
+                            <div id="deviceDetail_view">
+                                <h4>Light 1</h4>
+<!--                                 <label>Icon</label>
+                                    <div class="mapImg"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div> -->
+                                <p><label>Status</label>Online</p>
+                                <p><label>BundleName</label>
+                                 7wd56qd31dqw
+                                </p>
+                                <p><label>Location</label>
+                                 Room 1
+                                </p>
+                                <p><label>Gateway</label>
+                                 Gateway 1
+                                </p>
+                                <p><label>Polling time(m)</label>
+                                 20
+                                </p>
+                            </div>
+                               <!--  <p><div class="-btn def mr-b-50px">SAVE</div></p> -->
+                        </div>
+                    </div>
+                    <div class="page backpage scroll" id="location_edit">
+                        <h2>
+                            <div class="_deviceIcon back"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> 
+                            <input type="text" placeholder="" value="Room 1">
+                        </h2>
+                        <p>
+                            <label>Group</label>
+                            <select>
+                                <option selected>6F</option>
+                                <option>5F</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Description</label>
+                            <input placeholder="Description" value="big house">
+                        </p>
+                        <p>
+                            <label>Capacities</label>
+                            <select>
+                                    <option>Less then 5</option>
+                                    <option>5 to 10</option>
+                                    <option selected>10 to 15</option>
+                                    <option>More then 15</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Map</label>
+                            <div class="mapImg hover"><i class="fa fa-map-o" aria-hidden="true"></i></div>
+                        </p>
+                        <div>
+                            <label>Device tag</label>
+                            <ul>
+                                <li>                                
+                                    <span class="label label-default">Air conditioning</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                                <li>                                
+                                    <span class="label label-default">TV</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                            <select>
+                                    <option selected>Air conditioning</option>
+                                    <option>Refrigerator</option>
+                                    <option>TV</option>
+                            </select>
+                            <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                         </div> 
+                         <p></p>  
+                        <div>
+                            <div class="-btn def mr-b-50px">SAVE</div>
+                            <div class="-btn def mr-b-50px">CANCEL</div>
+                        </div>
+                    </div>
+                    <div class="page  backpage" id="gateway_edit">
+                        <h2>
+                            <div class="_deviceIcon back"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> 
+                            <input type="text" placeholder="" value="Gateway 1">
+                        </h2>
+                        <p><label>Location</label>
+                            <select>
+                                <option  selected>Room 1</option>
+                            </select>
+                        </p>
+                        <div>
+                            <div class="-btn def mr-b-50px">SAVE</div>
+                            <div class="-btn def mr-b-50px">CANCEL</div>
+                        </div>
+                    </div>
+                    <div class="page backpage" id="device_edit">
+                        <div class="scope backpage" id="deviceEdit_view">
+                            <h2>
+                                <div class="_deviceIcon back"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> 
+                                <input type="text" placeholder="" value="Light 1">
+                            </h2>
+                            <label>Icon</label>
+                                <div class="mapImg hover"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            <p><label>Gateway</label>
+                                <select>
+                                    <option  selected>Gateway 1</option>
+                                </select>
+                            </p>
+                            <p><label>Polling time(m)</label>
+                                <input placeholder="0-20" value="20">
+                            </p>
+                            <div>
+                                <div class="-btn def mr-b-50px">SAVE</div>
+                                <div class="-btn def mr-b-50px">CANCEL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page backpage" id="location_config">
+                        <h2>
+                            <div class="_deviceIcon back"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> 
+                            LOCATION SETTING
+                        </h2>
+                        <!-- <div>
+                            <label>Group</label>
+                            <ul>
+                                <li>
+                                    <span class="label label-default">6F</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <span class="label label-default">5F</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                            <input placeholder="Group name">
+                            <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                        </div>
+                        <p></p> -->
+                        <div>
+                            <label>Device tag</label>
+                            <ul>
+                                <li>
+                                    <span class="label label-default">TV</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <span class="label label-default">Air conditioning</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <span class="label label-default">Refrigerator</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                            <input placeholder="Device name">
+                            <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                        </div>
+                        <p></p>
+                        <!-- <div>
+                            <div class="-btn def mr-b-50px">SAVE</div>
+                            <div class="-btn def mr-b-50px">CANCEL</div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div  id="group_setting" class="sub-block hide groupSetting">
+                    <div class="icon"><i class="fa fa-object-group" aria-hidden="true"></i></div>
+                    <div class="oneSide-block left">
+                        <h2>Group setting</h2>
+                            <ul>
+                                <li>
+                                    <input  placeholder="6F" value="6F" size="10">
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <input  placeholder="5F" value="5F" size="10">
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <input placeholder="Group name"  size="10">
+                                    <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                            <p></p>
+                        <div class="-btn def">Save</div>
+                    </div>
+                    
+                </div>
+
+                <div  id="add_new_location" class="sub-block hide addNewLocation">
+                   
+                    <div class="icon"><i class="fa fa-map-marker fa-6" aria-hidden="true"></i></div>
+<!--                         <h2>Add new location</h2>
+                        <p><input  placeholder="Location name"></p>
+                        <p><input  placeholder="Map image" class="file"></p>
+                        <p><input  placeholder="description" class="file"></p>
+                        <div class="-btn def">SUBMIT</div> -->
+
+                    <div class="oneSide-block right">
+                        <h2>Add new location</h2>
+                        <p><input  placeholder="Location name"></p>
+                        <p><input  placeholder="Map image" class="file"></p>
+                        <p><input  placeholder="description" ></p>
+                        <p>
+                            <select>
+                                    <option selected disabled>Capacities</option>
+                                    <option>Less then 5</option>
+                                    <option>5 to 10</option>
+                                    <option>10 to 15</option>
+                                    <option>More then 15</option>
+                            </select>
+                        </p>
+                        <p>
+                            <select>
+                                    <option selected disabled>Group</option>
+                                    <option>6F</option>
+                                    <option>5F</option>
+                            </select>
+                        </p>
+                        <div>
+                            <select>
+                                    <option selected disabled>Device tag</option>
+                                    <option>Air conditioning</option>
+                                    <option>Refrigerator</option>
+                                    <option>TV</option>
+                            </select>
+                            <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                            <ul>
+                                <li>                                
+                                    <span class="label label-default">Air conditioning</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                                <li>                                
+                                    <span class="label label-default">TV</span>
+                                    <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                         </div>
+                         <p></p>
+                        <div class="-btn def">SUBMIT</div>
+                    </div>
+                </div>
+
+
+
+                <div  id="add_new_gateways" class="sub-block sub-block-slide hide addNewGateways">
+                    <!-- <div class="icon" style="float:right"><i class="fa fa-cloud fa-6" aria-hidden="true"></i></div> -->
+                    <div class="page scroll" id="gw_list">
+                        <h2>Add new geteways</h2>
+                        <div class="sub_nav active" data-tar="gw_list">ONLINE LIST</div>
+                        <div class="sub_nav" data-tar="gw_sn">S/N</div>
+                        <div class="sub_nav"  data-tar="gw_qrcode">QRCODE</div>              
+                            <table class="table" id="AddNewGeteways_table">
+                            <thead> 
+                                <tr> 
+                                    <th><i class="fa fa-check" aria-hidden="true"></i></th> 
+                                    <th style="width:200px">Geteway name</th> <th>Ip</th> 
+                                    <th>Mac Address</th> 
+                                    <th>Location</th> 
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr> <th scope="row"><input type="checkbox"></th> 
+                                    <td><input type="text" value="GATEWAY-7845451"></td>
+                                    <td>192.168.3.21</td>
+                                    <td>A0-3F-D5-63-36-2A</td>
+                                    <td>
+                                        <div class="selectLine">
+                                            <select>
+                                            <option>Room 1</option>
+                                            </select> 
+                                            <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                                        </div>
+                                    </td> 
+                                </tr>
+                                <tr> <th scope="row"><input type="checkbox"></th> 
+                                    <td><input type="text" value="GATEWAY-7845451"></td>
+                                    <td>192.168.3.21</td>
+                                    <td>A0-3F-D5-63-36-2A</td> 
+                                    <td>
+                                        <div class="selectLine">
+                                            <select>
+                                            <option>Room 1</option>
+                                            </select> 
+                                            <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true"></i>
+                                        </div>
+                                    </td> 
+                                </tr>
+                            </tbody>
+                            </table>
+                            <p></p>
+                        <div class="-btn def">SUBMIT</div><div class="-btn def">REFRESH</div>
+                    </div>
+
+                    <div class="page" id="gw_sn">
+                        <h2>Add new geteways</h2>
+                        <div class="sub_nav" data-tar="gw_list">ONLINE LIST</div>
+                        <div class="sub_nav active" data-tar="gw_sn">S/N</div>
+                        <div class="sub_nav"  data-tar="gw_qrcode">QRCODE</div>        
+
+                        <div class="installState">
+                            <ul>
+                                <li class="active next" data-tar="addGwSnS1">Step 1</li>
+                                <li class="next" data-tar="addGwSnS2">Step 2</li>
+                                <li class="next" data-tar="addGwSnS3">Step 3</li>
+                                <li class="next" data-tar="addGwSnF">Final</li>
+                            </ul>
+                        </div>
+
+                        <div class="centerBlock">
+                            <div class="center" id="addGwSnS1">
+                                <div class="icon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+                                STEP 1
+                                <h2>Enter the serial number</h2>
+                                <p><input value="" placeholder="S/N" style="width:90%"></p>
+                                <div class="-btn def next" data-tar="addGwSnS2">NEXT</div>
+                                <!-- <p class="hide" id="gw_sn_v">S/N : RYTU78786IG8645UH53H434OI</p> -->
+                            </div>
+
+                            <div class="center text-right" id="addGwSnS2"> 
+                                <div class="icon" style="float:right"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                                STEP 2
+                                <h2>Give it a name</h2>
+                                <p><input value="GATEWAY-7845451" class="text-right" placeholder="Gateway name"></p>
+                                <div class="-btn def next" data-tar="addGwSnS3">NEXT</div>
+                            </div>
+
+                            <div class="center" id="addGwSnS3"> 
+                                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                <div class="oneSide-block right mr-0 pd-0">
+                                    STEP 3
+                                    <h2>Select the location</h2>
+
+                                    <div class="selectLine">
+                                        <div class="loc">
+                                            <select class="">
+                                            <option>Room 1</option>
+                                            </select> <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true" ></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="-btn def next" data-tar="addGwSnF">NEXT</div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="center text-right" id="addGwSnF">  
+                                <div class="icon" style="float:right"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+                                <h2>FINISH</h2>
+                                <div class="-btn def">SUBMIT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page" id="gw_qrcode">
+                        <h2>Add new geteways</h2>
+                        <div class="sub_nav" data-tar="gw_list">ONLINE LIST</div>
+                        <div class="sub_nav" data-tar="gw_sn">S/N</div>
+                        <div class="sub_nav active"  data-tar="gw_qrcode">QRCODE</div> 
+
+                        <div class="installState">
+                            <ul>
+                                <li class="active next" data-tar="addGwQrS1">Step 1</li>
+                                <li class="next" data-tar="addGwQrS2">Step 2</li>
+                                <li class="next" data-tar="addGwQrS3">Step 3</li>
+                                <li class="next" data-tar="addGwQrF">Final</li>
+                            </ul>
+                        </div>
+
+                        <div class="centerBlock">
+                            <div class="center" id="addGwQrS1">
+                                <div class="icon" id="gw_qrcode_v"><i class="fa fa-qrcode" aria-hidden="true"></i></div>
+                                STEP 1
+                                <h2>Scanning QR Code</h2>
+                                <div class="-btn def next" id="gw_scan" data-tar="addGwQrS2">SCAN</div>
+                                <p class="hide" id="gw_sn_v">S/N : RYTU78786IG8645UH53H434OI</p>
+                            </div>
+
+                            <div class="center text-right" id="addGwQrS2"> 
+                                <div class="icon" style="float:right"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                                STEP 2
+                                <h2>Give it a name</h2>
+                                <p><input value="GATEWAY-7845451" class="text-right" placeholder="Gateway name"></p>
+                                <div class="-btn def next" data-tar="addGwQrS3">NEXT</div>
+                            </div>
+
+                            <div class="center" id="addGwQrS3"> 
+                                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <div class="oneSide-block right mr-0 pd-0">
+                                    STEP 3
+                                    <h2>Select the location</h2>
+
+                                    <div class="selectLine">
+                                        <div class="loc">
+                                            <select class="">
+                                            <option>Room 1</option>
+                                            </select> <i class="fa fa-plus-square-o anyhover addlocation" aria-hidden="true" ></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="-btn def next" data-tar="addGwQrF">NEXT</div>
+                                </div>
+                            </div>
+
+                            <div class="center text-right" id="addGwQrF">  
+                                <div class="icon" style="float:right"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+                                <h2>FINISH</h2>
+                                <div class="-btn def">SUBMIT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="add_new_device" class="sub-block sub-block-slide hide addNewDevice">
+
+                    <div class="page scroll" id="dev_list">
+                        <h2>Add new device</h2>
+                        <div class="sub_nav active" data-tar="dev_list">ONLINE LIST</div>
+                        <div class="sub_nav" data-tar="dev_sn">S/N</div>
+                        <div class="sub_nav"  data-tar="dev_qrcode">QRCODE</div>              
+                            <table class="table" id="AddNewGeteways_table">
+                            <thead> 
+                                <tr> 
+                                    <th><i class="fa fa-check" aria-hidden="true"></i></th> 
+                                    <th>Device name</th> 
+                                    <th class="text-right">Geteway</th> 
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr> <th scope="row"><input type="checkbox"></th> 
+                                    <td><input type="text" value="ambient_light_9F622005004B1200-1.0" size="40"></td>
+                                    <td class="text-right">
+                                        Geteway 1
+                                    </td> 
+                                </tr>
+                                <tr> <th scope="row"><input type="checkbox"></th> 
+                                    <td><input type="text" value="temperature_571A6407004B1200-1.0" size="40"></td>
+                                    <td class="text-right">
+                                        Geteway 1
+                                    </td> 
+                                </tr>
+                            </tbody>
+                            </table>
+                            <p></p>
+                        <div class="-btn def">SUBMIT</div><div class="-btn def">REFRESH</div>
+                    </div>
+                    <div class="page scroll_" id="dev_sn">
+                        <h2>Add new device</h2>
+                        <!-- <h4><b>S/N</b> QRcode Server source</h4> -->
+                        <!-- <div class="sub-title">- </div> -->
+                        <div class="sub_nav" data-tar="dev_list">ONLINE LIST</div>
+                        <div class="sub_nav active" data-tar="dev_sn">S/N</div>
+                        <div class="sub_nav" data-tar="dev_qrcode">QRCODE</div>
+                        <!-- <div class="sub_nav bundle">BUNDLE LIST</div> -->
+                        <div class="installState">
+                            <ul>
+                                <li class="active next" data-tar="addDeSnS1">Step 1</li>
+                                <li class="next" data-tar="addDeSnS2">Step 2</li>
+                                <!-- <li class="next" data-tar="addDeSnS3">Step 3</li> -->
+                                <li class="next" data-tar="addDeSnF">Final</li>
+                            </ul>
+                        </div>
+
+                        <div class="centerBlock"> 
+                            <div class="center" id="addDeSnS1">
+                                <div class="icon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+                                STEP 1
+                                <h2>Enter the serial number</h2>
+                                <p><input  value="" placeholder="S/N" style="width:90%"></p>
+                                <div class="-btn def next" data-tar="addDeSnS2">NEXT</div>
+                            </div>
+                            <div class="center text-right" id="addDeSnS2">
+                                <div class="icon"  style="float:right"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                                STEP 2
+                                <h2>Give it a name</h2>
+                                <p><input value=""   class="text-right" placeholder="Device name"></p>
+                                <div class="-btn def next" data-tar="addDeSnF">NEXT</div>
+                            </div>
+<!--                             <div class="center" id="addDeSnS3">
+                                <div class="icon" style="height:2.3em;line-height:2.3em"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                STEP 3
+                                <h2>Select the gateway bound</h2>
+                                <p><select>
+                                    <option>Gateway 1</option>
+                                </select></p>
+                                <div class="-btn def next" data-tar="addDeSnF">NEXT</div>
+                            </div> -->
+                            <div class="center text-right" id="addDeSnF">
+                                <div class="icon" style="float:right"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+                                <h2>FINISH</h2>
+                                <div class="-btn def">SUBMIT</div>
+                            </div>
+                        </div>
+
+                       <!--  <div class="centerBlock text-right hide_" id="addGwSnS2"> 
+                            <div class="center">
+                            <div class="icon"  style="float:right"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                            STEP 2
+                            <h2>Give it a name</h2>
+                            <p><input value=""   class="text-right" placeholder="Device name"></p>
+                            <div class="-btn def next" data-tar="addGwSnS3">NEXT</div>
+                            </div>
+                        </div>
+
+                        <div class="centerBlock hide_" id="addGwSnS3"> 
+                            <div class="center">
+                            <div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div>
+                            STEP 3
+                            <h2>Select the gateway bound</h2>
+                            <p><select>
+                                <option>Gateway 1</option>
+                            </select></p>
+                            <div class="-btn def next" data-tar="addGwSnSF">NEXT</div>
+                            </div>
+                        </div>
+
+                        <div class="centerBlock text-right hide_" id="addGwSnF"> 
+                            <div class="center">
+                            <div class="icon" style="float:right"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+                            <h2>FINISH</h2>
+                            <div class="-btn def">SUBMIT</div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="page" id="dev_qrcode">
+                        <h2>Add new device</h2>
+                        <!-- <h4><b>S/N</b> QRcode Server source</h4> -->
+                        <!-- <div class="sub-title">- </div> -->
+                        <div class="sub_nav" data-tar="dev_list">ONLINE LIST</div>
+                        <div class="sub_nav" data-tar="dev_sn">S/N</div>
+                        <div class="sub_nav active" data-tar="dev_qrcode">QRCODE</div>
+                        <!--  <div class="sub_nav bundle">BUNDLE LIST</div> -->
+                        <div class="installState">
+                            <ul>
+                                <li class="active next" data-tar="addDeQrS1">Step 1</li>
+                                <li class="next" data-tar="addDeQrS2">Step 2</li>
+                                <!-- <li class="next" data-tar="addDeQrS3">Step 3</li> -->
+                                <li class="next" data-tar="addDeQrF">Final</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="centerBlock"> 
+                            <div class="center" id="addDeQrS1">
+                                <div class="icon" id="qrcode_v"><i class="fa fa-qrcode" aria-hidden="true"></i></div>
+                                STEP 1
+                                <h2>Scanning QR Code</h2>
+                                <div class="-btn def next" id="scan" data-tar="addDeQrS2">SCAN</div>
+                                <p class="hide" id="sn_v">S/N : RYTU78786IG8645UH53H434OI</p>
+                            </div>
+
+                            <div class="center text-right" id="addDeQrS2"> 
+                                <div class="icon" style="float:right"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                                STEP 2
+                                <h2>Give it a name</h2>
+                                <p><input value="" class="text-right" placeholder="Device name"></p>
+                                <div class="-btn def next" data-tar="addDeQrF">NEXT</div>
+                            </div>
+
+<!--                             <div class="center" id="addDeQrS3"> 
+                                <div class="icon" style="height:2.3em;line-height:2.3em"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                STEP 3
+                                <h2>Select the gateway bound</h2>
+                                <p><select>
+                                    <option>Gateway 1</option>
+                                </select></p>
+                                <div class="-btn def next" data-tar="addDeQrF">NEXT</div>
+                            </div> -->
+
+                            <div class="center text-right" id="addDeQrF">  
+                                <div class="icon" style="float:right"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+                                <h2>FINISH</h2>
+                                <p></p>
+                                <div class="-btn def">SUBMIT</div>
+                            </div>
+                        </div>
+                    </div>
+
+<!--                <div class="page scroll" id="Bundle">
+                        <h2>Add new device</h2>
+                        <div class="sub-title">- </div>
+                        <div class="sub_nav sn">S/N</div>
+                        <div class="sub_nav qrcode">QRCODE</div>
+                        <div class="sub_nav active bundle">BUNDLE LIST</div>                        
+                    </div> -->
+
+                </div>
+
+
+            </div>
+            <!-- /main-->
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/lazyworking.js"></script>
+    <script type="text/javascript">
+
+        $('.main-block').css('height',$(window).height()-80+'px');
+
+        $('.mapImg,.file').click(function () {
+           document.getElementById('map').click();
+        });
+
+        $('.room_edit').click(function(){
+            amios.blockSlideTo('location_edit');
+        });
+
+        $('.gw_edit').click(function(){
+            amios.blockSlideTo('gateway_edit');
+        });
+
+        $('.location_cog').click(function(){
+            amios.blockSlideTo('location_config',900);
+        });
+
+        $('#location_list').on('click','.back',function(){
+            amios.blockSlideTo('location_list_main');
+        });
+
+        $('.addlocation').click(function(){
+            var parents = $(this).parents('.selectLine');
+            parents.append('<div class="loc"><select class=""><option>Room 1</option></select> <i class="fa fa-minus-square-o anyhover dellocation" aria-hidden="true"></i></div>');
+        });
+
+        $('.selectLine').on('click','.dellocation',function(){
+            var parents = $(this).parents('.loc').remove();
+        });
+
+        $('.sub_nav').click(function(){
+            if($(this).data('tar'))
+            amios.blockSlideTo($(this).data('tar'));
+        });
+
+        $('.next').click(function(){
+            $('#'+$(this).data('tar')).parents('.centerBlock').scrollTo('#'+$(this).data('tar'),300);
+            $(this).parents('.page').find('.installState li').removeClass('active');
+            $('.installState li[data-tar="'+$(this).data('tar')+'"]').addClass('active');
+        });
+
+        $('#scan').click(function(){
+            $('#sn_v').removeClass('hide');
+
+            $('#qrcode_v').css({
+                lineHeight:0,
+                backgroundColor:'inherit',
+                background:'url("https://lh3.ggpht.com/IWVLA4oDhLvGPsQrr8Z-FHLsmXBGId5t9u1lRY58aQPZCklXQ5T0IZuABXqTcs8HJxg=h900")',
+                backgroundPosition:'center',
+                backgroundSize:'cover'
+            }).html('');
+
+            // .html('<img src="https://lh3.ggpht.com/IWVLA4oDhLvGPsQrr8Z-FHLsmXBGId5t9u1lRY58aQPZCklXQ5T0IZuABXqTcs8HJxg=h900" width="100%">');
+        });
+
+        $('#gw_scan').click(function(){
+            $('#gw_sn_v').removeClass('hide');
+
+            $('#gw_qrcode_v').css({
+                lineHeight:0,
+                backgroundColor:'inherit',
+                background:'url("https://lh3.ggpht.com/IWVLA4oDhLvGPsQrr8Z-FHLsmXBGId5t9u1lRY58aQPZCklXQ5T0IZuABXqTcs8HJxg=h900")',
+                backgroundPosition:'center',
+                backgroundSize:'cover'
+            }).html('');
+
+            // .html('<img src="https://lh3.ggpht.com/IWVLA4oDhLvGPsQrr8Z-FHLsmXBGId5t9u1lRY58aQPZCklXQ5T0IZuABXqTcs8HJxg=h900" width="100%">');
+        });
+
+        // $('.icon_del').hover(
+        //     function(){
+        //         $(this).parents('li').addClass('bg-3896ca');
+        //     },
+        //     function(){
+        //         $(this).parents('li').removeClass('bg-3896ca');
+        // });
+
+        var dataTemp = {
+                db:new pageDb()
+            };
+
+    </script>
+    
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/amios.js"></script>
+    <script src="config.js"></script>
+    <script src="js/motion/location/locationList.js"></script>
+    <script src="js/motion/location/editDevice.js"></script>
+
+</body>
+
+</html>
