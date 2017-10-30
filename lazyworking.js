@@ -1,4 +1,4 @@
-/* lazyworking.js jQuery Plugin - v1.0
+/* lazyworking.js jQuery Plugin - v2.0
  * Copyright ©2015 YecaPee
  * 2015-7-29
  */
